@@ -11,7 +11,7 @@ export default function PackingList() {
       <h1>My Packing List</h1>
       <ul>
         <Item
-          isPacked={false}
+          isPacked={true}
           name="Laptop"
         />
         <Item
