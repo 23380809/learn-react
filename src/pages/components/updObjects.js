@@ -11,9 +11,16 @@ export default function Form() {
   });
 
   function handleCityChange(e) {
-    const nextArtwork = { ...person.artwork, city: e.target.value };
-    const nextPerson = { ...person, artwork: nextArtwork };
-    setPerson(nextPerson);
+    setPerson({
+      ...person,
+      artwork: {
+        ...person.artwork,
+        city: e.target.value
+      }
+    })
+    // const nextArtwork = { ...person.artwork, city: e.target.value };
+    // const nextPerson = { ...person, artwork: nextArtwork };
+    // setPerson(nextPerson);
   }
 
 
